@@ -1,0 +1,100 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<title>채다은 · People Analytics 포트폴리오 요약</title>
+<link rel="stylesheet" href="_style.css">
+<style>td strong{color:#1a1a1a}</style>
+<body>
+
+<h1>채다은 · People Analytics 포트폴리오 요약</h1>
+<p class="sub">조직문화 데이터 &amp; 소통 플랫폼 지원 인턴 지원자 · 국민대학교 · daeun9484@kookmin.ac.kr</p>
+
+<div class="lede">
+AI 피플애널리틱스 과정에서 <strong>12개 프로젝트</strong>를 수행했습니다. 수업 교안이 주는 실무질문과
+프롬프트를 AI에 넣어 코드를 받고, 제 맥북에서 직접 돌려 에러를 잡고 결과를 해석했습니다.
+오늘은 그중 공고 업무와 직접 맞닿는 <strong>PRJ_07 조직네트워크 · PRJ_09 직원경험 · PRJ_02 인재유지</strong>를 중심으로 정리해 왔습니다.
+</div>
+
+<h2>공고에 적힌 업무와, 제가 해본 것</h2>
+<table>
+<tr><th style="width:27%">공고 업무</th><th style="width:36%">제가 해본 것</th><th>숫자</th></tr>
+
+<tr><td><strong>사내 소통 플랫폼 서비스 기획·운영 지원</strong></td>
+<td><strong>PRJ_07</strong> 사내 메신저 로그로 소통 구조를 진단 — 사일로·고립 직원·비공식 리더 식별</td>
+<td class="n">직원 명부 × 6개 분기 로그<br>실습 15개</td></tr>
+
+<tr><td><strong>사내 캠페인·이벤트·타운홀 등 커뮤니케이션 프로그램 기획·운영</strong></td>
+<td><strong>PRJ_07 #9·#10</strong> 조직개편·신규 프로젝트 <em>전후로</em> 소통 구조가 실제로 바뀌었는지 검증</td>
+<td class="n">총 소통 12,594→<span class="num">29,018건</span><br>부서 간 협업 21.3%→<span class="num">49.7%</span></td></tr>
+
+<tr><td><strong>조직문화·사내 소통 활성화 콘텐츠 기획</strong></td>
+<td><strong>PRJ_09</strong> 인터뷰·회사리뷰 텍스트에서 직원 불만 주제 추출<br>(TF-IDF · LDA · BERTopic · 감정분석 · 독성탐지)</td>
+<td class="n">실습 10개<br>토픽 자동 분류 + 명칭 부여</td></tr>
+
+<tr><td><strong>플랫폼 운영 모니터링 · QA · 테스트 케이스</strong></td>
+<td><strong>PRJ_07 #2 / PRJ_09 #8</strong> 외부 API 장애를 전제로 설계 — 503 발생 시 3회 재시도·1초 대기, 끝까지 실패한 행은 <em>빈칸이 아니라 에러로</em> 기록</td>
+<td class="n">실패 케이스를 지우지 않고<br>남기는 쪽으로 설계</td></tr>
+
+<tr><td><strong>최신 AI 기술·업무 자동화 사례 조사, Digital Workflow 개선</strong></td>
+<td><strong>PRJ_09 #1</strong> 유튜브 자막 자동 수집 → 생성형 AI 요약 → <code>.md</code> 축적 파이프라인<br><strong>PRJ_01·02</strong> 학술논문·뉴스 RSS 자동 수집으로 트렌드 리서치를 자동화</td>
+<td class="n">주소만 넣으면<br>트렌드 DB가 쌓임</td></tr>
+
+<tr><td><strong>People Analytics · EX · 조직문화 트렌드 리서치</strong></td>
+<td><strong>PRJ_02</strong> 인재유지 — 월별 퇴사율, 성과·보상·근무시간의 영향, 생존분석으로 이탈 고비 시점 탐지</td>
+<td class="n">실습 11개 · N=500<br>로지스틱 McFadden R²=.483</td></tr>
+
+<tr><td><em>(우대)</em> <strong>Analytics Dashboard 제작 / 데이터 분석 프로젝트</strong></td>
+<td><strong>PRJ_11 #1 · PRJ_07 #3</strong> 조회 조건을 바꿔 볼 수 있는 인터랙티브 HTML 대시보드</td>
+<td class="n">Plotly · 전체 12개 프로젝트</td></tr>
+</table>
+
+<h2>말씀드리고 싶은 세 가지</h2>
+
+<h3 class="nb">1 · 좋아 보이는 지표가 나쁜 신호일 때를 잡았습니다 <span style="font-weight:normal;color:#666">(PRJ_07)</span></h3>
+<p>신규 프로젝트 런칭 후 <strong>부서 간 협업 비율이 21.3%에서 49.7%</strong>로 올랐습니다.
+사일로가 깨진 것처럼 보였지만, <strong>총 협업 건수는 3,195건에서 2,347건으로 줄었습니다.</strong>
+협업이 늘어난 게 아니라 <span class="num">차출된 소수에게 쏠린 것</span>이었습니다.
+비율만 보고했다면 "조직개편 성공"으로 올라갔을 사안입니다.</p>
+<p>→ 캠페인이나 타운홀도 참여<strong>율</strong>만 보면 같은 함정에 빠집니다. <strong>참여 총량과 분포를 같이 봐야 합니다.</strong></p>
+
+<h3 class="nb">2 · 통념을 데이터로 기각해 봤습니다 <span style="font-weight:normal;color:#666">(PRJ_07)</span></h3>
+<p>"부서 간 다리 역할을 하는 브로커가 번아웃에 취약할 것"이라는 가설을 회귀로 검증했더니
+매개 중심성 계수가 <span class="num">−3.633 (p=0.049)</span>로, 오히려 번아웃 위험이 <strong>낮았습니다.</strong>
+정보와 통제감이 모이는 위치가 주는 보호 효과로 읽었습니다.</p>
+<p>→ 그래서 케어 자원을 브로커가 아니라 <strong>네트워크 외곽의 고립 직원(탐지 18명)</strong> 쪽으로 돌리자는 쪽으로 제언을 바꿨습니다.
+소통 플랫폼에서도 <strong>활발한 사람보다 안 보이는 사람</strong>을 찾는 게 먼저라고 생각합니다.</p>
+
+<h3 class="nb">3 · 작은 집단으로 차이를 주장하면 안 된다는 걸 배웠습니다 <span style="font-weight:normal;color:#666">(PRJ_11)</span></h3>
+<p>실습용 가상 데이터였는데, 데이터를 만든 분이 "면접관별 합격률에 편향을 심어 두었다"고 안내 시트에 적어 두셨습니다. 그런데
+카이제곱 검정에서는 <span class="num">p = .976</span>으로 전혀 검출되지 않았습니다.
+면접관 1명당 120명뿐이라, 실제 관측된 7.5%p 차이를 유의하게 잡으려면 <strong>1명당 588명</strong>이 필요했기 때문입니다.</p>
+<p>→ 조직문화 지표를 본부·팀·직급으로 쪼개면 금방 n이 20~30명이 됩니다. <strong>"차이가 있다"가 아니라
+"지금 데이터로는 몇 %p까지 잡아낼 수 있다"를 먼저 적어야 한다</strong>로 정리했습니다.</p>
+
+<h2>쓴 도구</h2>
+<p>
+<span class="tag">pandas</span><span class="tag">numpy</span><span class="tag">NetworkX</span><span class="tag">scikit-learn</span><span class="tag">statsmodels</span><span class="tag">scipy</span><span class="tag">Plotly</span><span class="tag">matplotlib</span><span class="tag">seaborn</span><span class="tag">soynlp</span><span class="tag">BERTopic</span><span class="tag">transformers (Hugging Face)</span><span class="tag">google-genai (Gemini)</span><span class="tag">feedparser</span><span class="tag">openpyxl</span><span class="tag">JAMOVI</span>
+</p>
+<div class="box">
+HR 데이터는 평가·급여·성향을 다루기 때문에, 감정분석과 독성탐지는 외부 API 대신
+<strong>허깅페이스 모델을 로컬에 내려받아</strong> 돌리는 쪽으로 설계했습니다. 데이터가 밖으로 나가지 않습니다.
+클라우드 AI와 로컬 모델을 어느 분석에 쓸지 비교표로 정리해 두었습니다.
+</div>
+
+<h2>제가 삼일에 지원한 이유</h2>
+<p>삼일은 2024년 12월 <strong>회계법인 최초로 고용노동부 '제1회 대한민국 일·생활 균형 우수기업'</strong>에
+선정된 것으로 알고 있습니다. 재택·원격근무와 시차·자율출퇴근, 성수기 보상휴가까지
+제도를 앞서 깔아 두신 조직입니다.</p>
+<p>제가 인재유지 프로젝트(PRJ_02)에서 이직 데이터를 로지스틱 회귀로 돌렸을 때,
+이직 확률을 올린 것은 <span class="num">근무시간(+0.139, p=.004)</span>이었고
+<span class="num">급여는 유의하지 않았습니다(p=.533)</span>.
+다중회귀에서는 근무시간이 성과를 올리지도 않았습니다<span class="num">(p=.643)</span>.
+<strong>오래 일하게 하는 것은 성과도 만들지 못하고 사람만 내보낸다</strong>는 결과였고,
+삼일이 깔아 두신 제도가 왜 옳은지를 숫자로 뒷받침하는 결과라고 생각했습니다.</p>
+<p>다만 <strong>제도가 있다는 것과 실제로 쓰인다는 것은 다른 문제</strong>입니다.
+유연근무가 퍼지면 사내 소통 구조는 반드시 달라지고, 사일로나 고립이 새로 생길 수 있습니다.
+그것을 <strong>전후로 비교해 숫자로 확인하는 일</strong>을 PRJ_07에서 해봤습니다.
+제도를 앞서 깐 조직일수록 그게 실제로 작동하는지 확인할 사람이 필요하다고 생각했고,
+이 자리가 소통 플랫폼 운영과 People Analytics 리서치를 함께 보는 자리여서 지원했습니다.</p>
+
+<p class="foot">전체 기록 — 실무질문 · 프롬프트 원문 · 최종 코드 · 실행 결과 캡처 — 은 Notion 포트폴리오에 정리되어 있습니다.</p>
+
+</body></html>

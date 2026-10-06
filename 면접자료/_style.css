@@ -1,0 +1,32 @@
+@page { size: A4; margin: 15mm 14mm; }
+* { box-sizing: border-box; }
+body {
+  font-family: 'WenQuanYi Zen Hei', sans-serif;
+  font-size: 10.2pt; line-height: 1.55; color: #1a1a1a; margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+h1 { font-size: 17pt; margin: 0 0 2mm; letter-spacing: -0.3px; }
+h2 { font-size: 12pt; margin: 7mm 0 2.5mm; padding-bottom: 1.5mm;
+     border-bottom: 1.6px solid #1a1a1a; letter-spacing: -0.2px; }
+h3 { font-size: 10.8pt; margin: 4.5mm 0 1.5mm; color: #0b3d62; }
+p  { margin: 0 0 2mm; }
+ul,ol { margin: 0 0 2mm; padding-left: 5mm; }
+li { margin-bottom: 1mm; }
+.sub { color: #555; font-size: 9.3pt; margin: 0 0 4mm; }
+.lede { background:#f4f6f8; border-left: 3px solid #0b3d62; padding: 3mm 3.5mm; margin: 0 0 5mm; }
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 4mm; font-size: 9.1pt; }
+th { background: #eceff2; text-align: left; font-weight: bold; }
+th,td { border: 0.6px solid #c2c8cf; padding: 1.8mm 2.2mm; vertical-align: top; }
+td.n { white-space: nowrap; }
+strong { color: #0b3d62; }
+.num { font-weight: bold; color: #a3310f; }
+.box { border: 0.8px solid #c2c8cf; padding: 3mm 3.5mm; margin: 0 0 4mm; background:#fafbfc; }
+.tag { display:inline-block; border:0.6px solid #8a939c; border-radius:2.5mm;
+       padding: 0.4mm 2mm; margin: 0 1mm 1.2mm 0; font-size: 8.6pt; color:#333; }
+.foot { margin-top: 6mm; padding-top: 2.5mm; border-top: 0.6px solid #c2c8cf;
+        font-size: 8.8pt; color: #555; }
+.pb { page-break-before: always; }
+.nb { page-break-inside: avoid; }
+hr { border:0; border-top:0.6px solid #d5dade; margin:5mm 0; }
+.q { font-weight: bold; color:#0b3d62; margin-top:3.5mm; }
+.warn { background:#fff7e6; border-left:3px solid #b7791f; padding:2.5mm 3mm; margin:0 0 4mm; font-size:9.4pt; }
